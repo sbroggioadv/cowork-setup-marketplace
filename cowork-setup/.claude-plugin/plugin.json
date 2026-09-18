@@ -1,0 +1,7 @@
+{
+  "name": "cowork-setup",
+  "description": "Organiza a pasta COWORK-OS de um escritório de advocacia no método Code-OS: cliente-primeiro, STATE.md por caso, FICHA, cadeia Zeus→Gandalf→Chefe→Thor, auditoria. Comando único: /cowork-setup (novo · migrar · auditar · atualizar). Conteúdo é do escritório; o plugin traz só a mecânica.",
+  "version": "1.0.1",
+  "author": { "name": "Luis Sbroggio" },
+  "keywords": ["cowork", "advocacia", "organizacao", "state", "setup"]
+}

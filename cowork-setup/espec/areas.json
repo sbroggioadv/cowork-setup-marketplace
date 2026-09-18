@@ -1,0 +1,32 @@
+{
+  "_comentario": "Áreas conhecidas (2º nível de contencioso/ e consultivo/), com os nomes que os mentorados costumam usar nas pastas e o plugin que cobre. Lista ABERTA: área que não está aqui nasce em slug e é registrada em _sistema/areas.json da pasta. 'master' = skill-mestre do plugin; 'confirmar' = nome não verificado — o chefe testa e cai para a persona do escritório se não existir.",
+  "areas": {
+    "civel":             {"nomes": ["civel", "cível", "civil", "cíveis", "civeis"], "plugin": "civel-adv-os", "master": "civel-master", "confirmar": true},
+    "consumidor":        {"nomes": ["consumidor", "consumerista", "cdc"], "plugin": "civel-adv-os", "master": "civel-master", "confirmar": true},
+    "empresarial":       {"nomes": ["empresarial", "contratos", "contrato", "contratual", "b2b"], "plugin": null, "master": null},
+    "franchising":       {"nomes": ["franchising", "franquia", "franquias"], "plugin": null, "master": null},
+    "societario":        {"nomes": ["societario", "societário", "sociedades", "m&a"], "plugin": "tributario-societario-adv-os", "master": "tributario-societario-master"},
+    "tributario":        {"nomes": ["tributario", "tributário", "fiscal", "tributos"], "plugin": "tributario-societario-adv-os", "master": "tributario-societario-master"},
+    "holding":           {"nomes": ["holding", "holdings", "patrimonial", "planejamento patrimonial"], "plugin": "holding-architect", "master": "holding-master"},
+    "trabalhista":       {"nomes": ["trabalhista", "trabalho", "trabalhistas"], "plugin": "trabalhista-adv-os", "master": "trabalhista-master"},
+    "bancario":          {"nomes": ["bancario", "bancário", "bancarios", "bancários", "revisional"], "plugin": "bancario-adv-os", "master": "bancario-master"},
+    "familia":           {"nomes": ["familia", "família", "sucessoes", "sucessões", "inventario", "inventário", "divorcio", "divórcio"], "plugin": "direito-familia-adv-os", "master": "familia-master"},
+    "licitacoes":        {"nomes": ["licitacoes", "licitações", "licitacao", "licitação", "administrativo", "publico"], "plugin": "licitacoes-adv-os", "master": "licitacoes-master"},
+    "previdenciario":    {"nomes": ["previdenciario", "previdenciário", "inss", "aposentadoria"], "plugin": "previdenciario-adv-os", "master": "previdenciario-master"},
+    "medico":            {"nomes": ["medico", "médico", "saude", "saúde", "plano de saude", "odontologico"], "plugin": "direito-medico-adv-os", "master": "medico-master"},
+    "marcas-inpi":       {"nomes": ["marcas", "marca", "inpi", "propriedade intelectual", "pi", "registro de marcas"], "plugin": "marca-inpi-adv-os", "master": "marcas-master"},
+    "imigracao":         {"nomes": ["imigracao", "imigração", "vistos", "eua", "portugal"], "plugin": "imigracao-eua-os | imigracao-portugal-os", "master": "imigracao-master"},
+    "execucao":          {"nomes": ["execucao", "execução", "cobranca", "cobrança", "monitoria", "monitória"], "plugin": "execucao-adv-os", "master": "execucao-master"},
+    "penal-empresarial": {"nomes": ["criminal", "penal", "penal empresarial"], "plugin": null, "master": null}
+  },
+  "auxiliares": {
+    "_comentario": "Não são áreas — são apoios que qualquer chefe pode acionar.",
+    "calculos":     {"plugin": "calculosjudiciais-adv-os", "master": "calculos-master", "confirmar": true, "para": "cálculo judicial / atualização"},
+    "jurimetria":   {"plugin": "jurimetria-os", "master": "jurimetria-master", "para": "probabilidade de êxito / risco"},
+    "juris":        {"plugin": "juris-adv-os", "master": "juris", "para": "pesquisa e validação de jurisprudência → <projeto>/pesquisas/"},
+    "contabil":     {"plugin": "auditoria-contabil-os", "master": "auditoria-contabil-master", "para": "números, regimes, SPED (modo consulta)"},
+    "cfo":          {"plugin": "cfo-combativo-os", "master": "cfo-master", "para": "financeiro interno do escritório — não é trabalho de cliente"},
+    "marketing":    {"plugin": "marketing-adv-os", "master": "marketing-master", "para": "marketing do escritório — não é trabalho de cliente"}
+  },
+  "tipos": ["contencioso", "consultivo", "holding"]
+}

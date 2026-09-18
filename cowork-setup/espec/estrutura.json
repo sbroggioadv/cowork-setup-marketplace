@@ -1,0 +1,62 @@
+{
+  "_comentario": "A LEI da organização. setup, lint, hooks e auditoria leem este arquivo — nunca a prosa. Mudou a regra? Muda aqui e sobe a VERSAO.",
+  "versao": "1.0.0",
+  "nome": {
+    "regex": "^[a-z0-9][a-z0-9.-]*$",
+    "prefixo_numerico_proibido": "^\\d{2}-",
+    "versoes_proibidas": "^(_?vers(oes|oes)|_?superad|_?backup|_?old|_?antig|_?final)",
+    "caminho_absoluto": "(/Users/[A-Za-z]|/home/[A-Za-z]|[A-Z]:\\\\Users\\\\)"
+  },
+  "raiz": {
+    "arquivos": ["CLAUDE.md", "TASKS.md"],
+    "pastas": ["identidade", "clientes", "knowledge", "_sistema"],
+    "opcionais": ["_legado", "timbrado", ".claude", ".gitignore"],
+    "motores_na_raiz": true
+  },
+  "identidade": {
+    "arquivos": ["00-PERFIL-MESTRE.md", "01-QUEM-SOU.md", "02-PERFIL-DE-VOZ.md", "03-REGRAS-DE-ESCRITA.md", "04-MAPA-DE-CONTEXTO.md", "05-ROTEAMENTO-PLUGINS.md", "06-MEMORIA.md"]
+  },
+  "knowledge": {
+    "arquivos": ["README.md"],
+    "pastas": ["templates"],
+    "templates": ["STATE.template.md", "STATE-cliente.template.md", "FICHA.template.md", "CADASTRO.template.md"]
+  },
+  "cliente": {
+    "arquivos": ["STATE.md", "cadastro/CADASTRO.md"],
+    "pastas_permitidas": ["cadastro", "contencioso", "consultivo", "holding"],
+    "arquivos_tolerados": ["CLAUDE.md", "_memoria-cowork.md"],
+    "state_secoes": ["## Projetos abertos", "## Projetos encerrados", "## Decisões fixadas", "## Próximo passo", "## Histórico"]
+  },
+  "projeto": {
+    "arquivos": ["STATE.md"],
+    "tier2_arquivos": ["FICHA.md"],
+    "tier2_pastas": ["entrada", "pesquisas"],
+    "pastas_conhecidas": ["entrada", "pesquisas", "historico"],
+    "state_secoes": ["## Demanda", "## Como começa", "## Como termina", "## Critério de aceite", "## Fase atual", "## Decisões fixadas", "## Gates", "## Pendências", "## Próximo passo", "## Histórico"],
+    "entregaveis": [".docx", ".pdf", ".xlsx", ".pptx", ".html", ".odt"],
+    "pesquisa_regex": "^\\d{4}-\\d{2}-\\d{2}-"
+  },
+  "holding": {
+    "arquivos": ["STATE.md", "FICHA.md"],
+    "nomenclatura_livre": true
+  },
+  "motores": {
+    "_comentario": "Pastas criadas pelos wizards /start-* dos plugins jurídicos, na raiz. Nomes travados. Reconhecidas pelo nome OU pelos marcadores.",
+    "conhecidos": ["auditoria-contabil", "bancario", "cfo", "civel", "calculos-judiciais", "direito-familia", "direito-medico", "execucao", "holding", "imigracao", "imigracao-portugal", "jurimetria", "juris", "licitacoes", "marca-inpi", "marketing", "previdenciario", "trabalhista", "tributario-societario"],
+    "marcadores": ["cowork-state.json", "persona.md", "perfil.md", "config.md"],
+    "casos_sem_dado_nominativo": true
+  },
+  "sistema": {
+    "pasta": "_sistema",
+    "arquivos": ["versao", "areas.json"],
+    "artefatos": ["censo.json", "perfil.json", "plano.json", "PLANO.md", "aplicado.log", "MIGRACAO.md"]
+  },
+  "legado_antigo": {
+    "_comentario": "O que o censo reconhece como Cowork OS anterior (prompt de setup dos mentorados + wizards).",
+    "raiz_arquivos": ["CLAUDE.md", "MEMORY.md", "PERSONA.md", "persona.md", "cloud.md", "TASKS.md"],
+    "raiz_pastas": {"BASE DE CONHECIMENTO": "knowledge", "BASE-DE-CONHECIMENTO": "knowledge", "Base de Conhecimento": "knowledge", "KNOWLEDGE": "knowledge", "CLIENTES": "clientes", "Clientes": "clientes", "IDENTIDADE": "identidade", "MODELOS": "timbrado"},
+    "cliente_pastas": {"CONSULTIVO": "consultivo", "Consultivo": "consultivo", "CONTENCIOSO": "contencioso", "Contencioso": "contencioso", "HOLDING": "holding", "Holding": "holding"},
+    "projeto_pastas": {"Documentos cliente": "entrada", "Documentos do cliente": "entrada", "DOCUMENTOS": "entrada", "Documentos": "entrada", "Entrada": "entrada", "Peças Finais": ".", "Pecas Finais": ".", "PEÇAS FINAIS": ".", "Output": ".", "Saída": ".", "Pesquisas": "pesquisas", "PESQUISAS": "pesquisas"},
+    "projeto_arquivos": {"state.md": "STATE.md", "STATE.md": "STATE.md", "memory.md": "_memoria-cowork.md", "MEMORY.md": "_memoria-cowork.md", "CLAUDE.md": "_claude-cowork.md"}
+  }
+}
