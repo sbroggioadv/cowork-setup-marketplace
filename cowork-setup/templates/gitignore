@@ -1,0 +1,15 @@
+# COWORK-OS — .gitignore (dormente: só age se um dia a pasta virar repositório git)
+# Fica de fora o que é gerado pela máquina/plugin ou carrega caminho absoluto local.
+.claude/settings.local.json
+**/.claude/settings.local.json
+**/cowork-state.json
+**/.hook-state.json
+**/.memory-evolver-pending.json
+**/.snapshots/
+**/.audit-log.json
+_sistema/.sessao
+.DS_Store
+__pycache__/
+*.pyc
+.env
+**/.env

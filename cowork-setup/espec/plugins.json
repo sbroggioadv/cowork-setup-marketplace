@@ -1,0 +1,1023 @@
+{
+ "_comentario": "Catálogo dos plugins IA Combativa (repositórios sbroggioadv/<plugin>-marketplace, lido em 2026-09-24). Serve só para reconhecer o plugin instalado: área(s), skill-mestre, Corte e o nome da pasta-motor que o wizard /start-* cria. Plugin fora do catálogo também é acoplado (o plugins.py procura a skill *-master nele). Nenhum plugin é obrigatório: sem plugin, o chefe produz na persona do escritório com os modelos de knowledge/modelos/.",
+ "esquema": 1,
+ "lido_em": "2026-09-24",
+ "plugins": {
+  "auditoria-contabil-os": {
+   "marketplace": "auditoria-contabil-os-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/auditoria-contabil-os-marketplace",
+   "versao_catalogo": "0.1.0",
+   "grupo": "auxiliar",
+   "areas": [],
+   "motor": "auditoria-contabil",
+   "skill_mestre": "auditoria-contabil-master",
+   "corte": "revisao-final",
+   "wizard": "start-auditoria-contabil",
+   "env": {
+    "prefixo": "CONTABIL",
+    "vars": [
+     "COWORK_PATH",
+     "PERSONA",
+     "STATE_FILE"
+    ]
+   },
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": true,
+   "mcp": false,
+   "sensivel": false,
+   "roteavel": true,
+   "obs": ""
+  },
+  "agrario-adv-os": {
+   "marketplace": "agrario-adv-os-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/agrario-adv-os-marketplace",
+   "versao_catalogo": "0.1.0",
+   "grupo": "area",
+   "areas": [
+    "agrario"
+   ],
+   "motor": "agrario",
+   "skill_mestre": "agrario-master",
+   "corte": "suprema-corte-agraria",
+   "wizard": "start-agrario",
+   "env": "detectar",
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": true,
+   "mcp": false,
+   "sensivel": false,
+   "roteavel": true,
+   "obs": ""
+  },
+  "bancario-adv-os": {
+   "marketplace": "bancario-adv-os-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/bancario-adv-os-marketplace",
+   "versao_catalogo": "0.1.0",
+   "grupo": "area",
+   "areas": [
+    "bancario"
+   ],
+   "motor": "bancario",
+   "skill_mestre": "bancario-master",
+   "corte": "auditoria-juris-pre-envio",
+   "wizard": "start-bancario",
+   "env": "detectar",
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": true,
+   "mcp": false,
+   "sensivel": false,
+   "roteavel": true,
+   "obs": "sem suprema-corte nomeada"
+  },
+  "civel-adv-os": {
+   "marketplace": "civel-adv-os-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/civel-adv-os-marketplace",
+   "versao_catalogo": "1.0.0",
+   "grupo": "area",
+   "areas": [
+    "civel"
+   ],
+   "motor": "civel",
+   "skill_mestre": "civel-master",
+   "corte": "suprema-corte-civel",
+   "wizard": "start-civel",
+   "env": "detectar",
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": true,
+   "mcp": false,
+   "sensivel": false,
+   "roteavel": true,
+   "obs": ""
+  },
+  "consumidor-adv-os": {
+   "marketplace": "consumidor-adv-os-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/consumidor-adv-os-marketplace",
+   "versao_catalogo": "0.1.0",
+   "grupo": "area",
+   "areas": [
+    "consumidor"
+   ],
+   "motor": "consumidor",
+   "skill_mestre": "consumidor-master",
+   "corte": "suprema-corte-consumidor",
+   "wizard": null,
+   "env": "detectar",
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": true,
+   "mcp": false,
+   "sensivel": false,
+   "roteavel": true,
+   "obs": ""
+  },
+  "criminal-adv-os": {
+   "marketplace": "criminal-adv-os-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/criminal-adv-os-marketplace",
+   "versao_catalogo": "1.0.0",
+   "grupo": "area",
+   "areas": [
+    "penal"
+   ],
+   "motor": "criminal",
+   "skill_mestre": "criminal-master",
+   "corte": "suprema-corte-criminal",
+   "wizard": "start-criminal",
+   "env": "detectar",
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": true,
+   "mcp": false,
+   "sensivel": true,
+   "roteavel": true,
+   "obs": "dado sensível"
+  },
+  "direito-familia-adv-os": {
+   "marketplace": "direito-familia-adv-os-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/direito-familia-adv-os-marketplace",
+   "versao_catalogo": "0.1.0-alpha.1",
+   "grupo": "area",
+   "areas": [
+    "familia"
+   ],
+   "motor": "direito-familia",
+   "skill_mestre": "familia-master",
+   "corte": "revisao-final-familia",
+   "wizard": "start-familia",
+   "env": {
+    "prefixo": "FAMILIA",
+    "vars": [
+     "COWORK_PATH",
+     "PERSONA",
+     "STATE_FILE"
+    ]
+   },
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": true,
+   "mcp": false,
+   "sensivel": true,
+   "roteavel": true,
+   "obs": "dado sensível"
+  },
+  "direito-imobiliario-adv-os": {
+   "marketplace": "direito-imobiliario-adv-os-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/direito-imobiliario-adv-os-marketplace",
+   "versao_catalogo": "0.1.0",
+   "grupo": "area",
+   "areas": [
+    "imobiliario"
+   ],
+   "motor": "direito-imobiliario",
+   "skill_mestre": "imobiliario-master",
+   "corte": "suprema-corte-imobiliaria",
+   "wizard": "start-imobiliario",
+   "env": "detectar",
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": true,
+   "mcp": false,
+   "sensivel": false,
+   "roteavel": true,
+   "obs": ""
+  },
+  "direito-medico-adv-os": {
+   "marketplace": "direito-medico-adv-os-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/direito-medico-adv-os-marketplace",
+   "versao_catalogo": "0.1.1",
+   "grupo": "area",
+   "areas": [
+    "medico"
+   ],
+   "motor": "direito-medico",
+   "skill_mestre": "medico-master",
+   "corte": "revisao-final-medica",
+   "wizard": "start-medico",
+   "env": {
+    "prefixo": "DIRMED",
+    "vars": [
+     "COWORK_PATH",
+     "PERSONA",
+     "STATE_FILE"
+    ]
+   },
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": true,
+   "mcp": false,
+   "sensivel": true,
+   "roteavel": true,
+   "obs": "invocação manual; dado sensível"
+  },
+  "eleitoral-adv-os": {
+   "marketplace": "eleitoral-adv-os-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/eleitoral-adv-os-marketplace",
+   "versao_catalogo": "0.1.0",
+   "grupo": "area",
+   "areas": [
+    "eleitoral"
+   ],
+   "motor": "eleitoral",
+   "skill_mestre": "eleitoral-master",
+   "corte": "suprema-corte-eleitoral",
+   "wizard": "start-eleitoral",
+   "env": "detectar",
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": true,
+   "mcp": false,
+   "sensivel": false,
+   "roteavel": true,
+   "obs": ""
+  },
+  "etica-adv-os": {
+   "marketplace": "etica-adv-os-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/etica-adv-os-marketplace",
+   "versao_catalogo": "0.1.0",
+   "grupo": "area",
+   "areas": [
+    "etica-oab"
+   ],
+   "motor": "etica",
+   "skill_mestre": "ted-master",
+   "corte": "suprema-corte-etica",
+   "wizard": "start-etica",
+   "env": "detectar",
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": true,
+   "mcp": false,
+   "sensivel": false,
+   "roteavel": true,
+   "obs": ""
+  },
+  "franchising-adv-os": {
+   "marketplace": "franchising-adv-os-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/franchising-adv-os-marketplace",
+   "versao_catalogo": "0.1.0",
+   "grupo": "area",
+   "areas": [
+    "franchising"
+   ],
+   "motor": "franchising",
+   "skill_mestre": "franchising-master",
+   "corte": "suprema-corte-franchising",
+   "wizard": "start-franchising",
+   "env": "detectar",
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": true,
+   "mcp": false,
+   "sensivel": false,
+   "roteavel": true,
+   "obs": ""
+  },
+  "holding-architect": {
+   "marketplace": "holding-architect-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/holding-architect-marketplace",
+   "versao_catalogo": "0.1.0",
+   "grupo": "area",
+   "areas": [
+    "holding"
+   ],
+   "motor": "holding",
+   "skill_mestre": "holding-master",
+   "corte": "suprema-corte-holding",
+   "wizard": "start-holding",
+   "env": "detectar",
+   "marcadores": [
+    "perfil.md"
+   ],
+   "hooks": true,
+   "mcp": false,
+   "sensivel": false,
+   "roteavel": true,
+   "obs": ""
+  },
+  "ia-combativa-adv-os": {
+   "marketplace": "ia-combativa-adv-os-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/ia-combativa-adv-os-marketplace",
+   "versao_catalogo": "0.1.0",
+   "grupo": "area",
+   "areas": [
+    "empresarial",
+    "civel",
+    "franchising"
+   ],
+   "motor": "ia-combativa",
+   "skill_mestre": "firm-master",
+   "corte": "suprema-corte-r1-coleta",
+   "wizard": "start",
+   "env": "detectar",
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": true,
+   "mcp": true,
+   "sensivel": false,
+   "roteavel": true,
+   "obs": "flagship; único com .mcp.json; wizard /start"
+  },
+  "imigracao-espanha-os": {
+   "marketplace": "imigracao-espanha-os-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/imigracao-espanha-os-marketplace",
+   "versao_catalogo": "0.1.0",
+   "grupo": "area",
+   "areas": [
+    "imigracao"
+   ],
+   "motor": "imigracao-espanha",
+   "skill_mestre": "imigracao-espanha-master",
+   "corte": "suprema-corte-imigratoria-es",
+   "wizard": "start-imigracao-espanha",
+   "env": "detectar",
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": true,
+   "mcp": false,
+   "sensivel": false,
+   "roteavel": true,
+   "obs": "idem",
+   "pais": "espanha"
+  },
+  "imigracao-eua-os": {
+   "marketplace": "imigracao-eua-os-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/imigracao-eua-os-marketplace",
+   "versao_catalogo": "0.1.2",
+   "grupo": "area",
+   "areas": [
+    "imigracao"
+   ],
+   "motor": "imigracao",
+   "skill_mestre": "imigracao-master",
+   "corte": "suprema-corte-imigratoria",
+   "wizard": "start-imigracao",
+   "env": "detectar",
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": true,
+   "mcp": false,
+   "sensivel": false,
+   "roteavel": true,
+   "obs": "pasta não nasce por padrão",
+   "pais": "eua"
+  },
+  "imigracao-paraguai-os": {
+   "marketplace": "imigracao-paraguai-os-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/imigracao-paraguai-os-marketplace",
+   "versao_catalogo": "0.1.0",
+   "grupo": "area",
+   "areas": [
+    "imigracao"
+   ],
+   "motor": "imigracao-paraguai",
+   "skill_mestre": "imigracao-master",
+   "corte": "validador-imigratorio",
+   "wizard": "start-imigracao-paraguai",
+   "env": "detectar",
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": true,
+   "mcp": false,
+   "sensivel": false,
+   "roteavel": true,
+   "obs": "idem",
+   "pais": "paraguai"
+  },
+  "imigracao-portugal-os": {
+   "marketplace": "imigracao-portugal-os-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/imigracao-portugal-os-marketplace",
+   "versao_catalogo": "0.1.1",
+   "grupo": "area",
+   "areas": [
+    "imigracao"
+   ],
+   "motor": "imigracao-portugal",
+   "skill_mestre": "imigracao-master",
+   "corte": "suprema-corte-imigratoria",
+   "wizard": "start-imigracao-portugal",
+   "env": "detectar",
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": true,
+   "mcp": false,
+   "sensivel": false,
+   "roteavel": true,
+   "obs": "idem",
+   "pais": "portugal"
+  },
+  "imigracao-uruguai-os": {
+   "marketplace": "imigracao-uruguai-os-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/imigracao-uruguai-os-marketplace",
+   "versao_catalogo": "0.1.0",
+   "grupo": "area",
+   "areas": [
+    "imigracao"
+   ],
+   "motor": "imigracao-uruguai",
+   "skill_mestre": "imigracao-master",
+   "corte": "validador-imigratorio-uruguai",
+   "wizard": "start-imigracao-uruguai",
+   "env": "detectar",
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": true,
+   "mcp": false,
+   "sensivel": false,
+   "roteavel": true,
+   "obs": "idem",
+   "pais": "uruguai"
+  },
+  "leiloes-os": {
+   "marketplace": "leiloes-os-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/leiloes-os-marketplace",
+   "versao_catalogo": "0.1.0",
+   "grupo": "area",
+   "areas": [
+    "leiloes"
+   ],
+   "motor": "leiloes",
+   "skill_mestre": "leiloes-master",
+   "corte": "suprema-corte-leiloes",
+   "wizard": "start-leiloes",
+   "env": "detectar",
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": true,
+   "mcp": false,
+   "sensivel": false,
+   "roteavel": true,
+   "obs": ""
+  },
+  "licitacoes-adv-os": {
+   "marketplace": "licitacoes-adv-os-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/licitacoes-adv-os-marketplace",
+   "versao_catalogo": "0.1.0",
+   "grupo": "area",
+   "areas": [
+    "licitacoes"
+   ],
+   "motor": "licitacoes",
+   "skill_mestre": "licitacoes-master",
+   "corte": "revisao-final-licitacoes",
+   "wizard": "start-licitacoes",
+   "env": {
+    "prefixo": "LICITAC",
+    "vars": [
+     "COWORK_PATH",
+     "PERSONA",
+     "STATE_FILE"
+    ]
+   },
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": true,
+   "mcp": false,
+   "sensivel": false,
+   "roteavel": true,
+   "obs": ""
+  },
+  "marca-inpi-adv-os": {
+   "marketplace": "marca-inpi-adv-os-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/marca-inpi-adv-os-marketplace",
+   "versao_catalogo": "0.1.0",
+   "grupo": "area",
+   "areas": [
+    "marcas-inpi"
+   ],
+   "motor": "marca-inpi",
+   "skill_mestre": "marcas-master",
+   "corte": "suprema-corte-marcaria",
+   "wizard": "start-marca-inpi",
+   "env": "detectar",
+   "marcadores": [
+    "perfil.md"
+   ],
+   "hooks": true,
+   "mcp": false,
+   "sensivel": false,
+   "roteavel": true,
+   "obs": ""
+  },
+  "previdenciario-adv-os": {
+   "marketplace": "previdenciario-adv-os-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/previdenciario-adv-os-marketplace",
+   "versao_catalogo": "0.1.0",
+   "grupo": "area",
+   "areas": [
+    "previdenciario"
+   ],
+   "motor": "previdenciario",
+   "skill_mestre": "previdenciario-master",
+   "corte": "suprema-corte-previdenciaria",
+   "wizard": "start-previdenciario",
+   "env": {
+    "prefixo": "PREVIDENCIARIO",
+    "vars": [
+     "COWORK_PATH",
+     "PERSONA"
+    ]
+   },
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": true,
+   "mcp": false,
+   "sensivel": false,
+   "roteavel": true,
+   "obs": ""
+  },
+  "procurador-estadual-os": {
+   "marketplace": "procurador-estadual-os-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/procurador-estadual-os-marketplace",
+   "versao_catalogo": "0.1.0",
+   "grupo": "area",
+   "areas": [
+    "publica"
+   ],
+   "motor": "procurador-estadual",
+   "skill_mestre": "procurador-master",
+   "corte": "suprema-corte-fazendaria",
+   "wizard": null,
+   "env": "detectar",
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": true,
+   "mcp": false,
+   "sensivel": false,
+   "roteavel": true,
+   "obs": "cliente = ente"
+  },
+  "procurador-federal-os": {
+   "marketplace": "procurador-federal-os-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/procurador-federal-os-marketplace",
+   "versao_catalogo": "0.1.0",
+   "grupo": "area",
+   "areas": [
+    "publica"
+   ],
+   "motor": "procurador-federal",
+   "skill_mestre": "procurador-master",
+   "corte": "suprema-corte-fazendaria",
+   "wizard": null,
+   "env": "detectar",
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": true,
+   "mcp": false,
+   "sensivel": false,
+   "roteavel": true,
+   "obs": "cliente = ente"
+  },
+  "procurador-municipal-os": {
+   "marketplace": "procurador-municipal-os-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/procurador-municipal-os-marketplace",
+   "versao_catalogo": "0.1.0",
+   "grupo": "area",
+   "areas": [
+    "publica"
+   ],
+   "motor": "procurador-municipal",
+   "skill_mestre": "procurador-master",
+   "corte": "suprema-corte-fazendaria",
+   "wizard": null,
+   "env": "detectar",
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": true,
+   "mcp": false,
+   "sensivel": false,
+   "roteavel": true,
+   "obs": "cliente = ente"
+  },
+  "trabalhista-adv-os": {
+   "marketplace": "trabalhista-adv-os-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/trabalhista-adv-os-marketplace",
+   "versao_catalogo": "0.1.1",
+   "grupo": "area",
+   "areas": [
+    "trabalhista"
+   ],
+   "motor": "trabalhista",
+   "skill_mestre": "trabalhista-master",
+   "corte": "suprema-corte-trabalhista",
+   "wizard": "start-trabalhista",
+   "env": {
+    "prefixo": "TRABALHISTA",
+    "vars": [
+     "COWORK_PATH",
+     "PERSONA",
+     "STATE_FILE",
+     "CONFIG",
+     "CASOS_DIR"
+    ]
+   },
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": true,
+   "mcp": false,
+   "sensivel": false,
+   "roteavel": true,
+   "obs": ""
+  },
+  "transito-adv-os": {
+   "marketplace": "transito-adv-os-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/transito-adv-os-marketplace",
+   "versao_catalogo": "0.1.0",
+   "grupo": "area",
+   "areas": [
+    "transito"
+   ],
+   "motor": "transito",
+   "skill_mestre": "transito-master",
+   "corte": "suprema-corte-transito",
+   "wizard": "start-transito",
+   "env": "detectar",
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": true,
+   "mcp": false,
+   "sensivel": false,
+   "roteavel": true,
+   "obs": ""
+  },
+  "tributario-societario-adv-os": {
+   "marketplace": "tributario-societario-adv-os-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/tributario-societario-adv-os-marketplace",
+   "versao_catalogo": "0.1.0",
+   "grupo": "area",
+   "areas": [
+    "tributario",
+    "societario"
+   ],
+   "motor": "tributario-societario",
+   "skill_mestre": "tributario-societario-master",
+   "corte": "suprema-corte-empresarial",
+   "wizard": "start-tributario-societario",
+   "env": {
+    "prefixo": "TRIBSOC",
+    "vars": [
+     "COWORK_PATH",
+     "PERSONA",
+     "STATE_FILE"
+    ]
+   },
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": true,
+   "mcp": false,
+   "sensivel": false,
+   "roteavel": true,
+   "obs": "cópia sincronizada neste Mac usa empresarial-master/revisao-final — marketplace é a fonte"
+  },
+  "execucao-adv-os": {
+   "marketplace": "execucao-adv-os-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/execucao-adv-os-marketplace",
+   "versao_catalogo": "0.1.0",
+   "grupo": "fase",
+   "areas": [],
+   "motor": "execucao",
+   "skill_mestre": "execucao-master",
+   "corte": "protocolo-p4-execucao",
+   "wizard": null,
+   "env": "detectar",
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": true,
+   "mcp": false,
+   "sensivel": false,
+   "roteavel": true,
+   "obs": ""
+  },
+  "resp-re-os": {
+   "marketplace": "resp-re-os-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/resp-re-os-marketplace",
+   "versao_catalogo": "0.1.0",
+   "grupo": "fase",
+   "areas": [],
+   "motor": "resp-re",
+   "skill_mestre": "resp-re-master",
+   "corte": "suprema-corte-15484",
+   "wizard": null,
+   "env": "detectar",
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": true,
+   "mcp": false,
+   "sensivel": false,
+   "roteavel": true,
+   "obs": ""
+  },
+  "opositor-os": {
+   "marketplace": "opositor-os-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/opositor-os-marketplace",
+   "versao_catalogo": "0.1.0",
+   "grupo": "fora_do_perfil",
+   "areas": [],
+   "motor": "opositor",
+   "skill_mestre": "opositor-master",
+   "corte": "suprema-corte-opositor",
+   "wizard": null,
+   "env": "detectar",
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": true,
+   "mcp": false,
+   "sensivel": false,
+   "roteavel": false,
+   "obs": "não-advogado"
+  },
+  "tabelionato-os": {
+   "marketplace": "tabelionato-os-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/tabelionato-os-marketplace",
+   "versao_catalogo": "0.1.0",
+   "grupo": "fora_do_perfil",
+   "areas": [
+    "notarial"
+   ],
+   "motor": "tabelionato",
+   "skill_mestre": "tabelionato-master",
+   "corte": "suprema-corte-tabelionato",
+   "wizard": null,
+   "env": "detectar",
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": true,
+   "mcp": false,
+   "sensivel": false,
+   "roteavel": false,
+   "obs": "ótica da serventia"
+  },
+  "cfo-combativo-os": {
+   "marketplace": "cfo-combativo-os-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/cfo-combativo-os-marketplace",
+   "versao_catalogo": "0.1.0",
+   "grupo": "interno",
+   "areas": [],
+   "motor": "cfo",
+   "skill_mestre": "cfo-master",
+   "corte": "auditoria-cfo",
+   "wizard": null,
+   "env": {
+    "prefixo": "CFO",
+    "vars": [
+     "STATE"
+    ]
+   },
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": true,
+   "mcp": false,
+   "sensivel": false,
+   "roteavel": false,
+   "obs": "não roteado"
+  },
+  "marketing-adv-os": {
+   "marketplace": "marketing-adv-os-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/marketing-adv-os-marketplace",
+   "versao_catalogo": "0.1.0-alpha.3",
+   "grupo": "interno",
+   "areas": [],
+   "motor": "marketing",
+   "skill_mestre": "marketing-master",
+   "corte": "marketing-diretoria-criativa-marketing",
+   "wizard": "start-marketing",
+   "env": {
+    "prefixo": "MARKETING",
+    "vars": [
+     "COWORK_PATH",
+     "PERSONA",
+     "STATE_FILE"
+    ]
+   },
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": true,
+   "mcp": false,
+   "sensivel": false,
+   "roteavel": false,
+   "obs": "não roteado"
+  },
+  "triagem-pro": {
+   "marketplace": "triagem-pro-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/triagem-pro-marketplace",
+   "versao_catalogo": "0.2.5",
+   "grupo": "interno",
+   "areas": [],
+   "motor": null,
+   "skill_mestre": null,
+   "corte": null,
+   "wizard": null,
+   "env": "detectar",
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": false,
+   "mcp": false,
+   "sensivel": false,
+   "roteavel": false,
+   "obs": "provedor não oficial do WhatsApp"
+  },
+  "blindagem-peticao-os": {
+   "marketplace": "blindagem-peticao-os-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/blindagem-peticao-os-marketplace",
+   "versao_catalogo": "0.1.0",
+   "grupo": "auxiliar",
+   "areas": [],
+   "motor": "blindagem",
+   "skill_mestre": "blindagem-master",
+   "corte": "suprema-corte-blindagem",
+   "wizard": null,
+   "env": "detectar",
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": true,
+   "mcp": false,
+   "sensivel": false,
+   "roteavel": true,
+   "obs": "Thor C3"
+  },
+  "calculosjudiciais-adv-os": {
+   "marketplace": "calculosjudiciais-adv-os-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/calculosjudiciais-adv-os-marketplace",
+   "versao_catalogo": "0.1.0",
+   "grupo": "auxiliar",
+   "areas": [],
+   "motor": "calculos-judiciais",
+   "skill_mestre": "calculos-master",
+   "corte": null,
+   "wizard": "start-calculos",
+   "env": "detectar",
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": true,
+   "mcp": false,
+   "sensivel": false,
+   "roteavel": true,
+   "obs": ""
+  },
+  "jurimetria-os": {
+   "marketplace": "jurimetria-os-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/jurimetria-os-marketplace",
+   "versao_catalogo": "0.1.0",
+   "grupo": "auxiliar",
+   "areas": [],
+   "motor": "jurimetria",
+   "skill_mestre": "jurimetria-master",
+   "corte": "auditoria-jurimetrica",
+   "wizard": "start-jurimetria",
+   "env": "detectar",
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": true,
+   "mcp": false,
+   "sensivel": false,
+   "roteavel": true,
+   "obs": ""
+  },
+  "juris-adv-os": {
+   "marketplace": "juris-adv-os-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/juris-adv-os-marketplace",
+   "versao_catalogo": "0.1.0",
+   "grupo": "auxiliar",
+   "areas": [],
+   "motor": "juris",
+   "skill_mestre": "juris",
+   "corte": "auditoria-pre-envio",
+   "wizard": null,
+   "env": "detectar",
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": true,
+   "mcp": false,
+   "sensivel": false,
+   "roteavel": true,
+   "obs": "Thor C1",
+   "mestre_e_comando": true
+  },
+  "legalized-jur": {
+   "marketplace": "legalized-jur-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/legalized-jur-marketplace",
+   "versao_catalogo": "0.1.0",
+   "grupo": "auxiliar",
+   "areas": [],
+   "motor": "legalized",
+   "skill_mestre": "legalized",
+   "corte": null,
+   "wizard": null,
+   "env": "detectar",
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": false,
+   "mcp": false,
+   "sensivel": false,
+   "roteavel": true,
+   "obs": "1 skill + 1 agente",
+   "mestre_e_comando": true
+  },
+  "prisma-julgador-os": {
+   "marketplace": "prisma-julgador-os-marketplace",
+   "marketplace_url": "https://github.com/sbroggioadv/prisma-julgador-os-marketplace",
+   "versao_catalogo": "0.1.0",
+   "grupo": "auxiliar",
+   "areas": [],
+   "motor": "prisma-julgador",
+   "skill_mestre": "prisma-master",
+   "corte": "suprema-corte-prisma",
+   "wizard": null,
+   "env": "detectar",
+   "marcadores": [
+    "persona.md",
+    "cowork-state.json"
+   ],
+   "hooks": true,
+   "mcp": false,
+   "sensivel": false,
+   "roteavel": true,
+   "obs": ""
+  }
+ },
+ "ignorar": [
+  "cowork-os",
+  "cowork-setup",
+  "criativos-os",
+  "iapx-os"
+ ]
+}

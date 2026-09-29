@@ -1,0 +1,31 @@
+{
+  "_comentario": "Áreas conhecidas (2º nível de contencioso/ e consultivo/, e categorias de knowledge/modelos/), com os nomes que os advogados costumam usar nas pastas. Lista ABERTA: área que não está aqui nasce em slug e é registrada em _sistema/areas.json da pasta. Qual plugin cobre cada área NÃO está aqui: vem do catálogo (espec/plugins.json) cruzado com o que está instalado (_sistema/plugins.json). Nenhuma área exige plugin.",
+  "areas": {
+    "civel":             {"nomes": ["civel", "cível", "civil", "cíveis", "civeis", "responsabilidade civil", "cobranca", "cobrança"]},
+    "consumidor":        {"nomes": ["consumidor", "consumerista", "cdc"]},
+    "empresarial":       {"nomes": ["empresarial", "contratos", "contrato", "contratual", "b2b", "contratos empresariais", "instrumentos particulares", "nda", "confidencialidade", "joint venture", "mou", "distrato", "distratos", "aditivo", "aditivos", "confissao de divida", "confissoes de divida", "prestacao de servicos"]},
+    "franchising":       {"nomes": ["franchising", "franquia", "franquias", "cof", "circular de oferta", "franqueado", "franqueador"]},
+    "societario":        {"nomes": ["societario", "societário", "sociedades", "m&a", "acordo de socios", "acordos de socios", "quotas", "cessao de quotas", "compra e venda de quotas", "dissolucao", "liquidacao", "contrato social"]},
+    "tributario":        {"nomes": ["tributario", "tributário", "fiscal", "tributos", "itbi", "icms", "iss"]},
+    "holding":           {"nomes": ["holding", "holdings", "patrimonial", "planejamento patrimonial", "blindagem patrimonial", "planejamento sucessorio"]},
+    "trabalhista":       {"nomes": ["trabalhista", "trabalho", "trabalhistas", "reclamatoria", "reclamada"]},
+    "bancario":          {"nomes": ["bancario", "bancário", "bancarios", "bancários", "revisional"]},
+    "familia":           {"nomes": ["familia", "família", "sucessoes", "sucessões", "inventario", "inventário", "divorcio", "divórcio", "alimentos", "guarda"]},
+    "licitacoes":        {"nomes": ["licitacoes", "licitações", "licitacao", "licitação", "administrativo", "contratos administrativos"]},
+    "previdenciario":    {"nomes": ["previdenciario", "previdenciário", "inss", "aposentadoria"]},
+    "medico":            {"nomes": ["medico", "médico", "saude", "saúde", "plano de saude", "odontologico", "direito medico"]},
+    "marcas-inpi":       {"nomes": ["marcas", "marca", "inpi", "propriedade intelectual", "registro de marcas", "licenca de marca"]},
+    "imigracao":         {"nomes": ["imigracao", "imigração", "vistos", "eua", "portugal", "espanha", "nacionalidade"]},
+    "execucao":          {"nomes": ["execucao", "execução", "monitoria", "monitória", "cumprimento de sentenca"]},
+    "penal-empresarial": {"nomes": ["penal", "criminal", "penal empresarial", "crimes empresariais"]},
+    "imobiliario":       {"nomes": ["imobiliario", "imobiliário", "locacao", "locação", "compra e venda de imovel", "usucapiao", "condominio"]},
+    "agrario":           {"nomes": ["agrario", "agrário", "rural", "agronegocio", "agronegócio"]},
+    "eleitoral":         {"nomes": ["eleitoral", "eleicoes", "eleições"]},
+    "etica-oab":         {"nomes": ["etica", "ética", "ted", "tribunal de etica"]},
+    "leiloes":           {"nomes": ["leiloes", "leilões", "leilao", "leilão", "arrematacao"]},
+    "publica":           {"nomes": ["fazenda publica", "procuradoria", "publico", "público"]},
+    "transito":          {"nomes": ["transito", "trânsito", "multas", "cnh"]},
+    "notarial":          {"nomes": ["notarial", "tabelionato", "cartorio", "cartório", "registral"]}
+  },
+  "tipos": ["contencioso", "consultivo", "holding"]
+}
