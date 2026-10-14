@@ -1,0 +1,12 @@
+{
+  "name": "cowork-setup-marketplace",
+  "interface": { "displayName": "Cowork setup (iAPX)" },
+  "plugins": [
+    {
+      "name": "cowork-setup",
+      "source": { "source": "local", "path": "./cowork-setup" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Productivity"
+    }
+  ]
+}
