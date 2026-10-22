@@ -1,0 +1,8 @@
+{
+  "name": "dossie",
+  "version": "0.2.1",
+  "description": "Dossiê do caso: painel de consulta com decisões fixadas, cronologia, partes, valor, honorários e peças do caso da conversa",
+  "author": { "name": "Luis Sbroggio" },
+  "license": "UNLICENSED",
+  "types": "./types/index.d.ts"
+}

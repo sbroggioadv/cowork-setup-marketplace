@@ -1,0 +1,8 @@
+{
+  "name": "bancada",
+  "version": "0.3.1",
+  "description": "Bancada jurídica: painel lateral do caso da conversa (trilha do pedido, próximo passo, FICHA, ações e pendências do TASKS.md)",
+  "author": { "name": "Luis Sbroggio" },
+  "license": "UNLICENSED",
+  "types": "./types/index.d.ts"
+}

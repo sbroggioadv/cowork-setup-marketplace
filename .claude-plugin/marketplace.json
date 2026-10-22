@@ -1,0 +1,29 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "cowork-setup-marketplace",
+  "description": "Marketplace do plugin cowork-setup — organiza a pasta COWORK-OS de um escritório de advocacia no método Code-OS (cliente-primeiro, STATE por caso, FICHA, cadeia Zeus→Gandalf→Chefe→Thor, auditoria).",
+  "owner": { "name": "Sbroggio Advocacia & IA Combativa" },
+  "plugins": [
+    {
+      "name": "cowork-setup",
+      "source": "./cowork-setup",
+      "version": "1.1.7",
+      "description": "Organiza a pasta COWORK-OS no método Code-OS. Comando único /cowork-setup (novo · migrar · auditar · atualizar). Nada se move sem aprovação; nada se apaga; conteúdo é do escritório, o plugin traz só a mecânica.",
+      "author": { "name": "Sbroggio Advocacia & IA Combativa" }
+    },
+    {
+      "name": "bancada",
+      "source": "./bancada",
+      "version": "0.3.1",
+      "description": "Painel lateral do Claude Code para a pasta do cowork-setup: caso da conversa, trilha Brief→Corte→Thor→Entrega, próximo passo, FICHA, prazo, ações que escrevem o pedido e o quadro de pendências do TASKS.md. Opcional; só no Claude Code.",
+      "author": { "name": "Sbroggio Advocacia & IA Combativa" }
+    },
+    {
+      "name": "dossie",
+      "source": "./dossie",
+      "version": "0.2.1",
+      "description": "Painel de consulta do Claude Code para a pasta do cowork-setup: decisões fixadas, cronologia com status de prova, partes e foro, conflito, valor, honorários e peças do caso. Opcional; só no Claude Code.",
+      "author": { "name": "Sbroggio Advocacia & IA Combativa" }
+    }
+  ]
+}

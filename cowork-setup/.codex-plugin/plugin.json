@@ -1,0 +1,35 @@
+{
+  "name": "cowork-setup",
+  "version": "1.1.7",
+  "description": "Organiza a pasta COWORK-OS de um escritório de advocacia no método Code-OS: cliente-primeiro, STATE.md por caso, FICHA, cadeia Zeus→Gandalf→Chefe→Thor, auditoria. Comando único: $cowork-setup (novo · migrar · auditar · atualizar). Conteúdo é do escritório; o plugin traz só a mecânica.",
+  "author": {
+    "name": "Luis Sbroggio"
+  },
+  "keywords": [
+    "cowork",
+    "advocacia",
+    "organizacao",
+    "state",
+    "setup",
+    "codex"
+  ],
+  "skills": "./codex/skills/",
+  "hooks": "./codex/hooks.json",
+  "interface": {
+    "displayName": "Cowork setup",
+    "shortDescription": "Organiza a bancada jurídica COWORK-OS no método Code-OS",
+    "longDescription": "Organiza a pasta de trabalho de um escritório de advocacia: uma pasta por cliente, STATE e FICHA por caso, modelos canônicos por área, jurisprudência, doutrina e legislação com nível de citação, e a cadeia Zeus → Gandalf → Chefe → Corte → Thor. A mesma pasta abre no Claude e no Codex. Plugins jurídicos são opcionais. Nada se move sem aprovação; nada se apaga.",
+    "developerName": "iAPX",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Organiza minha pasta COWORK-OS",
+      "Audita a organização da minha pasta",
+      "Abre um caso novo para um cliente"
+    ]
+  }
+}
