@@ -17,6 +17,6 @@ shutil.move(str(f), str(alvo))
 st = f.parent / "STATE.md"
 if st.exists():
     t = ler(st)
-    if "## Histórico" in t:
+    if secao(t, "Histórico") is not None:
         t = t.rstrip("\n") + f"\n{hoje()} · versão anterior de `{f.name}` arquivada em `historico/{alvo.name}`\n"; st.write_text(t, encoding="utf-8")
 print(f"arquivado: {rel(root, alvo)}")

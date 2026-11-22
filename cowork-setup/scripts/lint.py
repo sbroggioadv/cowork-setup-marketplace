@@ -54,7 +54,7 @@ def checar_state(st: Path, secoes, projeto: bool):
     t = ler(st); faltam = [s for s in secoes if s not in t]
     if faltam: A("SECAO", rel(root, st), "sem seção fixa: " + ", ".join(faltam))
     if projeto:
-        g = t.split("## Gates")[1].split("\n## ")[0] if "## Gates" in t else ""
+        g = secao(t, "Gates") or ""
         nc = sum(1 for l in g.splitlines() if l.startswith("Corte")); nt = sum(1 for l in g.splitlines() if l.startswith("Thor"))
         if nc > 1 or nt > 1: A("BLOAT", rel(root, st), f"Gates com {nc} Corte / {nt} Thor — só a última rodada; anteriores em historico/")
 

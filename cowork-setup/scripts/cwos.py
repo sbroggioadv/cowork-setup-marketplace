@@ -93,7 +93,7 @@ def agora() -> str:
 RESERVADOS_WINDOWS = {"con", "prn", "aux", "nul"} | {f"com{i}" for i in range(1, 10)} | {f"lpt{i}" for i in range(1, 10)}
 
 def slug(name: str) -> str:
-    """'Clínica Mansur Jacob' -> 'clinica-mansur-jacob'. Mantém '_' inicial (pastas de sistema). Nunca termina em '.' e nunca
+    """'Clínica Exemplo Ltda' -> 'clinica-exemplo-ltda'. Mantém '_' inicial (pastas de sistema). Nunca termina em '.' e nunca
     devolve nome reservado do Windows (CON, PRN, AUX, NUL, COM1-9, LPT1-9 → ganha sufixo '-x')."""
     lead = "_" if name.startswith("_") else ""
     s = unicodedata.normalize("NFKD", name.lstrip("_")).encode("ascii", "ignore").decode().lower()
@@ -196,15 +196,24 @@ def eh_motor(d: Path, esp: dict | None = None) -> bool:
         return True
     return any((d / m).exists() for m in esp["motores"]["marcadores"])
 
+def secao(texto: str, titulo: str) -> str | None:
+    """Corpo da seção `## <titulo>` até a próxima `## `; None se não houver.
+    Só vale o cabeçalho no começo da linha: `## Gates` citado no meio de uma frase (no brief, por exemplo) não conta."""
+    m = re.search(rf"(?m)^##[ \t]+{re.escape(titulo)}\b[^\n]*(?:\n|$)", texto)
+    if not m: return None
+    resto = texto[m.end():]
+    fim = re.search(r"(?m)^##[ \t]", resto)
+    return resto[:fim.start()] if fim else resto
+
 def gates_ok(state_md: Path) -> dict:
-    """Lê ## Gates: {'corte': 'ok'|<texto>|None, 'thor': 'ok'|<texto>|None}."""
-    t = ler(state_md); g = t.split("## Gates")[1].split("\n## ")[0] if "## Gates" in t else ""
+    """Lê ## Gates: {'corte': 'ok'|<texto>|None, 'thor': 'ok'|<texto>|None}.
+    O que está entre parênteses sai antes de ler (o nome da skill pode ter dois-pontos: `plugin:skill`)."""
+    g = secao(ler(state_md), "Gates") or ""
     out = {"corte": None, "thor": None}
     for l in g.splitlines():
-        if l.startswith("Corte"): out["corte"] = "ok" if re.search(r"Corte[^:]*:\s*ok", l) else l.split(":", 1)[-1].strip()[:20]
-        if l.startswith("Thor"):
-            l2 = re.sub(r"\(.*?\)", "", l)
-            out["thor"] = "ok" if re.match(r"Thor:\s*ok\b", l2.strip()) else l2.split(":", 1)[-1].strip()[:20]
+        l2 = re.sub(r"\(.*?\)", "", l).strip()
+        if l.startswith("Corte"): out["corte"] = "ok" if re.match(r"Corte[^:]*:\s*ok\b", l2) else l2.split(":", 1)[-1].strip()[:20]
+        if l.startswith("Thor"): out["thor"] = "ok" if re.match(r"Thor:\s*ok\b", l2) else l2.split(":", 1)[-1].strip()[:20]
     return out
 
 _SEGREDO = None
