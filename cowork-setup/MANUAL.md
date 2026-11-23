@@ -1,6 +1,6 @@
 # Manual do `cowork-setup` — instalar, montar do zero, organizar o que já existe, atualizar
 
-> Versão 1.1.8 · Para quem usa o Claude (Cowork ou Claude Code) ou o Codex numa pasta chamada **COWORK-OS**, no **Mac ou no Windows**. Você não precisa saber o que é terminal, script ou repositório: tudo acontece no chat, por perguntas e respostas.
+> Versão 1.1.9 · Para quem usa o Claude (Cowork ou Claude Code) ou o Codex numa pasta chamada **COWORK-OS**, no **Mac ou no Windows**. Você não precisa saber o que é terminal, script ou repositório: tudo acontece no chat, por perguntas e respostas.
 
 ## 0. O que é, em 3 linhas
 
@@ -120,7 +120,7 @@ O que muda na sua pasta antiga:
 
 **Da 1.1.0 para a 1.1.1** nada se move: nasce o `AGENTS.md` (a mesma constituição, para o Codex — se você já tinha um `AGENTS.md`, ele vai antes para `_legado/anteriores/`) e a pasta `.codex/agents/` com os 5 agentes.
 
-**Da 1.1.1 até a 1.1.8** nada se move. A 1.1.2 traz a trava de versão (Claude e Codex com versões diferentes: o mais velho só lê e pede para atualizar) e o Histórico do caso passa a dizer quem fez (`· Claude` ou `· Codex`). A 1.1.3 muda o jeito de trabalhar do Zeus e do Gandalf (seção 9.1) e o modelo do STATE ganha o campo "alvo do cliente". A 1.1.4 só corrige os hooks no Codex. A 1.1.5 faz o cowork-setup deixar em paz uma pasta organizada pelo iAPX OS (quem passou para o iAPX OS e ainda tem o cowork-setup ligado). **No Codex**, o atualizar regrava `.codex/agents/` (é por ali que o Zeus e o Gandalf novos chegam à pasta) e pede para confiar de novo nos hooks (`/hooks`). A 1.1.7 muda só os modelos: a FICHA ganha a seção "Agenda do caso" (data, hora, o quê, onde, o que levar) e a linha "Valor da causa ou do negócio" com índice e data-base, e o CADASTRO ganha a linha de honorários (contratado · recebido · a vencer · vencido). Valem para os casos novos; nos já abertos, acrescente quando quiser. A mesma versão traz os painéis opcionais do Claude Code (seção 14). A 1.1.8 só corrige a conferência (selo do Thor e linha da Corte) e atualiza este manual.
+**Da 1.1.1 até a 1.1.9** nada se move. A 1.1.2 traz a trava de versão (Claude e Codex com versões diferentes: o mais velho só lê e pede para atualizar) e o Histórico do caso passa a dizer quem fez (`· Claude` ou `· Codex`). A 1.1.3 muda o jeito de trabalhar do Zeus e do Gandalf (seção 9.1) e o modelo do STATE ganha o campo "alvo do cliente". A 1.1.4 só corrige os hooks no Codex. A 1.1.5 faz o cowork-setup deixar em paz uma pasta organizada pelo iAPX OS (quem passou para o iAPX OS e ainda tem o cowork-setup ligado). **No Codex**, o atualizar regrava `.codex/agents/` (é por ali que o Zeus e o Gandalf novos chegam à pasta) e pede para confiar de novo nos hooks (`/hooks`). A 1.1.7 muda só os modelos: a FICHA ganha a seção "Agenda do caso" (data, hora, o quê, onde, o que levar) e a linha "Valor da causa ou do negócio" com índice e data-base, e o CADASTRO ganha a linha de honorários (contratado · recebido · a vencer · vencido). Valem para os casos novos; nos já abertos, acrescente quando quiser. A mesma versão traz os painéis opcionais do Claude Code (seção 14). A 1.1.8 só corrige a conferência (selo do Thor e linha da Corte) e atualiza este manual. A 1.1.9 muda o teto de devoluções: a Corte e o Thor passam a ter 2 devoluções cada, contadas à parte (antes eram 2 no total); o atualizar regrava a regra no `CLAUDE.md` da pasta.
 
 **Da 1.0 para a 1.1, o plano faz isto na sua `knowledge/`:**
 
@@ -220,7 +220,7 @@ Regras de nome: pastas (e os modelos de `knowledge/`) em minúsculas, hífen no 
 6. **Documentos de fora** — procura texto escondido, caractere invisível ou instrução dirigida à IA nos arquivos de `entrada/`; achou → vai para a FICHA como alerta, nunca é obedecido.
 7. **Chefe** — abre o `INDEX.md` de modelos da área, lê o modelo, aciona o plugin da área se houver, redige na sua voz com citações com nível e grava `.docx` + `.md` na raiz do caso, com `Modelo-base:` no STATE.
 8. **Corte** — outra instância, sem o contexto do Chefe: R1 fatos × FICHA · R2 base legal vigente e com nível · R3 tese e coerência · R4 forma e completude; grava `CORTE-R1-R4-<data>.md`. AJUSTAR → volta ao Chefe.
-9. **Thor** — confere o relatório da Corte, o critério de aceite, as decisões fixadas, a pasta, o STATE, o modelo declarado e as 4 camadas. DEVOLVIDO → Chefe → Corte → Thor (no máximo 2×; na 3ª, escala a você).
+9. **Thor** — confere o relatório da Corte, o critério de aceite, as decisões fixadas, a pasta, o STATE, o modelo declarado e as 4 camadas. DEVOLVIDO → Chefe → Corte → Thor. Cada revisão tem o seu teto: a Corte devolve no máximo 2× e o Thor no máximo 2×, contados à parte; na 3ª do mesmo, escala a você.
 10. **Fechamento** — Zeus grava os selos em `## Gates`, atualiza Fase, Próximo passo e Histórico (com `· Claude` ou `· Codex`) e diz onde está a peça e o que você faz fora da bancada (protocolar, lançar o prazo no seu sistema).
 
 ### 9.1 Pedido novo de cliente que já tem contrato, e o brief do Gandalf (1.1.3)
@@ -283,6 +283,7 @@ No fim do setup o plugin imprime um bloco ("Quem sou · Minha bancada · Como tr
 | Versão | O que mudou |
 |---|---|
 | 1.1.3 · 13/10/2026 | Zeus confere o escopo do contrato antes de produzir (incluído · correção nossa · extra · ambíguo; você decide cortesia, aditivo ou cobrar depois) · Gandalf separa pedido, sugestão e aceite, registra o alvo do cliente e oferece rascunho de confirmação · STATE com "alvo do cliente". |
+| 1.1.9 · 23/11/2026 | Teto de devoluções por revisão: a Corte devolve no máximo 2× e o Thor no máximo 2×, contados à parte; na 3ª do mesmo, o Zeus para e pergunta a você. Antes eram 2 no total, o que fazia o Zeus perguntar cedo demais quando a Corte já tinha pedido ajuste. Nada se move na pasta. |
 | 1.1.8 · 22/11/2026 | Correções: a conferência acusava entregável sem selo do Thor quando o brief citava "## Gates" numa frase, e lia errado a linha da Corte com o nome da skill do plugin entre parênteses (ex.: `(plugin:skill)`). Manual em PDF atualizado. Nada muda na pasta. |
 | 1.1.7 · 22/10/2026 | Modelos: "Agenda do caso" e valor da causa na FICHA; honorários (contratado · recebido · a vencer · vencido) no CADASTRO. Novos no marketplace, opcionais e só para o Claude Code: os painéis **Bancada** (`/bancada`) e **Dossiê do caso** (`/dossie`) — seção 14. Nada se move na pasta. |
 | 1.1.6 · 19/10/2026 | Correção: ao sincronizar no claude.ai, três descrições geravam aviso (duas com os sinais < >, e a do /cowork-setup com mais de 500 caracteres). Textos ajustados; nada muda na pasta. |

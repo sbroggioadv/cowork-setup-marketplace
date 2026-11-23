@@ -49,6 +49,6 @@ VEREDITO: APROVADO | DEVOLVIDO (motivos numerados, objetivos, verificáveis) | D
 SUSPEITA DE MÉRITO: nenhuma | <descrição> → devolver à Corte
 Linha para o ## Gates: Thor: ok · Corte: <skill> <data> · C1–C4: ok
 ```
-Devolução é para o chefe corrigir (e a Corte rodar de novo); você não corrige e não grava o `## Gates`. Zeus controla o limite de 2 devoluções.
+Devolução é para o chefe corrigir (e a Corte rodar de novo); você não corrige e não grava o `## Gates`. Zeus controla o limite de 2 devoluções do Thor, contado à parte do da Corte.
 
 Python: `python3` no macOS/Linux; no Windows, `python` ou `py -3`.

@@ -1,6 +1,6 @@
 {
   "_comentario": "A LEI da organização. setup, lint, hooks e auditoria leem este arquivo — nunca a prosa. Mudou a regra? Muda aqui e sobe a VERSAO.",
-  "versao": "1.1.8",
+  "versao": "1.1.9",
   "nome": {
     "regex": "^[a-z0-9][a-z0-9.-]*$",
     "prefixo_numerico_proibido": "^\\d{2}-",

@@ -5,7 +5,7 @@ metadata:
   short-description: "Entrevista o advogado e transforma a explicação do caso em BRIEF verificável (fatos, partes, pedido, documentos, praz…"
 ---
 
-> **Codex.** Versão para o Codex da skill `gandalf` do plugin `cowork-setup` v1.1.8 — gerada do mesmo texto da versão do Claude (não editar).
+> **Codex.** Versão para o Codex da skill `gandalf` do plugin `cowork-setup` v1.1.9 — gerada do mesmo texto da versão do Claude (não editar).
 > - **`<plugin>`** = a pasta do plugin: `../../..` a partir da pasta deste SKILL.md (a que tem `scripts/`, `espec/` e `templates/`). Use o caminho absoluto dela nos comandos abaixo e rode-os **a partir da raiz da pasta COWORK-OS**.
 > - Comandos da bancada no Codex começam com `$` (`$zeus` · nome completo `$cowork-setup:zeus`); skill de outro plugin: `$<plugin>:<skill>`. Textos da bancada (CLAUDE.md = AGENTS.md, identidade/) escrevem `/x`: leia como `$x`.
 > - "Agente `X`" = o subagente `X` desta bancada (`.codex/agents/X.toml`). Ao chamá-lo, passe no pedido o caminho absoluto de `<plugin>` — ele não o recebe sozinho. Sem `.codex/agents/` na pasta (ou o setup avisou que não conseguiu gravá-la — o sandbox do Codex protege `.codex/`): rode `python3 "<plugin>/scripts/aplicar.py" --agentes-codex` **pedindo execução fora do sandbox** (o Codex mostra o pedido ao advogado; explique em uma linha que é só para gravar os 5 agentes da bancada) e depois abra uma sessão nova; a pasta precisa estar marcada como confiável no Codex para ele ler os agentes.

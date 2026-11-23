@@ -7,7 +7,7 @@
     {
       "name": "cowork-setup",
       "source": "./cowork-setup",
-      "version": "1.1.8",
+      "version": "1.1.9",
       "description": "Organiza a pasta COWORK-OS no método Code-OS. Comando único /cowork-setup (novo · migrar · auditar · atualizar). Nada se move sem aprovação; nada se apaga; conteúdo é do escritório, o plugin traz só a mecânica.",
       "author": { "name": "Sbroggio Advocacia & IA Combativa" }
     },
